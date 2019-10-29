@@ -9,6 +9,7 @@ router = DefaultRouter()
 router.register('hello-viewset', views.HelloViewSet, base_name='hello-viewset')
 """name of the url, vista donde obtendremos la info, nombre base"""
 router.register('profile', views.UserModelViewSet)
+router.register('feed', views.UserProfileFeedViewSet)
 
 
 urlpatterns = [
